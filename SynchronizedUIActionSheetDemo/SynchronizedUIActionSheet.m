@@ -43,6 +43,7 @@
     if (_cancelButtonIndex != -1) {
         _actionSheet.cancelButtonIndex = _cancelButtonIndex;
     }
+    _actionSheet.delegate = self;
     [_actionSheet showInView:view];
     CFRunLoopRun();
     return _selectedIndex;
